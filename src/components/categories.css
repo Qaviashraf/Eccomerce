@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    margin-top: 20px;
+    /* margin-top: 10px; */
 }
 
 .containner{
@@ -80,14 +80,17 @@ display: grid;
 justify-content: center;
 position: relative;
 
+
 }
 .Btn:hover {
-padding: 12px 15px 12px 15px;
+color: black;
+background-color: white;
+border: 1px black solid;
 
 }
 .Btn1 {
 max-width: fit-content;
-max-height: 55px;
+max-height: 45px;
 grid-column: 1;
 grid-row: 1;
 bottom: -168%;
@@ -95,7 +98,7 @@ right: -35%;
 }
 .Btn2 {
     max-width: fit-content;
-    max-height: 55px;
+    max-height: 45px;
     grid-column: 2;
     grid-row: 1;
     bottom: -73%;
@@ -103,7 +106,7 @@ right: -35%;
 }
 .Btn3 {
     max-width: fit-content;
-    max-height: 55px;
+    max-height: 45px;
     grid-column: 2;
     grid-row: 1;
     bottom: -73%;
@@ -111,7 +114,7 @@ right: -35%;
 }
 .Btn4 {
     max-width: fit-content; 
-    max-height: 55px;
+    max-height: 45px;
     grid-column: 2;
     grid-row: 2;
     /* top: -40%; */
@@ -156,56 +159,6 @@ right: -35%;
     border-radius: 20px;
 }
 
-/* .item-1{ */
-    /* justify-content: center; */
-     /* grid-row: 1; */
-    /* grid-column: 2; */
-    /* margin-left: 30%; */
-    /* margin-right: 50%; */
-    /* transform: translate(%); */
-
-/* }  */
-/* .item-2{ */
-    /* justify-content: center; */
-    /* grid-row: 3;
-    grid-column: 1; */
-    /* transform: translate(5%); */
-/* } */
-/* .item-3{
-    transform: translate(55%);
-    grid-row: 4;
-    grid-column: 1;
-}*/
-/* .item-4 { */
-    /* transform: translate(-10%,10%); */
-    /* width: -2000px; */
-    /* grid-row: 5; */
-    /* grid-column: 1; */
-    /* margin-left: 20%; */
-/* }  */
- /* .Btn1 {
-     transform: translate(140%,-125%); 
-}
-.Btn2 {
-    transform: translate(-140%,-80%);
-}
-.Btn3 {
-    right: -30px;
-    transform: translate(-140%,50%); 
-    transform: translate(10%,-350%);
-    align-items: center;
-    justify-content: center;
-    margin-left: -30px;
-}
-.Btn4 {
-    transform: translate(-140%,20%);
-}   */
-/* .Btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
 .Btn1{
     margin-left: -70%;
 }

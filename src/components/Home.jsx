@@ -1,15 +1,19 @@
 import {Slider} from './Slider'
-// import {Categories} from './Categories'
+// import {data} from '../data'
 import {Categories} from './Categories'
 import "./categories.css"
+import { Products } from './Products'
 
 
-export const Home = () => {
+export const Home = ({ handleClick }) => {
+    // const {product} = data ;
     return(
 
         <div>
-        <Slider/>
+            
+        <Slider/> 
         <Categories/>
+        <Products handleClick={handleClick}/>
         </div> 
     
     

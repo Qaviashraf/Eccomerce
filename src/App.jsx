@@ -1,30 +1,71 @@
 // import './App.css'
+import { useState , useEffect} from "react"
 import {Home} from './components/Home'
 import { BrowserRouter as Router,  Route, Routes } from "react-router-dom";
 import {NavBar} from './components/nav&footer/NavBar'
 import { Products } from './components/Products';
 import { Cart } from './components/Cart';
+import {Item} from '../src/components/Item'
+
 function App() {
+  // const [show, setShow] = useState(true);
+  const [cart, setCart] = useState([]);
+
+  const handleClick = (item) => {
+    if (cart.indexOf(item) !== -1) return;
+    setCart([...cart, item]);
+  };
+
+  // const handleChange = (item,) => {
+    // const ind = cart.indexOf(item);
+    // const arr = [...cart];
+    // arr[ind].amount += d;
+
+    // if (arr[ind].amount === 0) arr[ind].amount = 1;
+    // setCart([...arr]);
+    
+    const handleChange = (a,b, d) => {
+      
+      const updatedCart = cart.map((cartItem) => {
+        if (cartItem.id === a) {
+          // If the IDs match, update the amount
+          // cartItem.amount
+          let newAmount =parseInt(b)+d;
+          // let newamount = cartItem.amount;
+          // let a=1;
+
+          console.log(cartItem.amount)
+          console.log(cartItem.id)
+          // const newAmount = "cartItem.amount + 1";
+          return {
+            ...cartItem,
+            amount: newAmount < 0 ? 0 : newAmount, // Ensure amount is non-negative
+          };
+        }
+        return cartItem;
+      });
+    
+      setCart(updatedCart);
+    };
+// console.log(items)
 
   return (
     <div>
-    {/* // <div className='App'> */}
-      {/* <Home/> */}
-      {/* <NavBar /> */}
-      
-
       <Router>
-        <NavBar />
+        <NavBar size={cart.length}/>
+        {/* <Products  handleClick={handleClick}/> */}
+        {/* <Cart cart={cart} setCart={setCart} handleChange={handleChange}/> */}
       <div>
       <Routes>
-        <Route exact path="/" Component={Home} />
-        <Route exact path="/Cart" Component={Cart} />
-        <Route exact path="/Products" Component={Products} />
+        <Route exact path="/" element={<Home handleClick={handleClick}/>} />
+        <Route exact path="/Cart" element={<Cart  cart={cart} setCart={setCart} handleChange={handleChange}/>} />
+        <Route exact path="/Products" element={<Products handleClick={handleClick} />} />
+        <Route exact path="/Item" element={<Item />} />
         </Routes>
-    </div>
-    </Router>
+        </div>
+    </Router>  
     </div>
   );
-}
+};
 
 export default App

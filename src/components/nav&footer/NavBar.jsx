@@ -4,7 +4,7 @@ import "./NavBar.css"
 import {HiMenu} from "react-icons/Hi"
 import {BsCart3} from "react-icons/Bs"
 
-export const NavBar = () => {
+export const NavBar = ({size}) => {
   const [click, setClick] = useState(false);
 
   const handleClick = () => {setClick(!click);}
@@ -44,9 +44,14 @@ export const NavBar = () => {
             <NavLink exact to="/" className="nav-logo">
                 Claue
             </NavLink>
-          <div className="cart-icon">
+            <NavLink 
+            exact to ="/Cart"
+            className="cart-icon">
+          
             <BsCart3/>
-          </div>
+            <span className="cart-no">{size}</span>
+          
+          </NavLink>
           <div className="nav-icon" onClick={handleClick}>
           <HiMenu />
           </div>
