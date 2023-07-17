@@ -7,6 +7,7 @@ import { Products } from './Products'
 
 export const Home = ({ handleClick }) => {
     // const {product} = data ;
+    
     return(
 
         <div>

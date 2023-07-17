@@ -12,7 +12,7 @@ export const Slider = () => {
         animation: 'fade',
         autoplay: true,
         autoplayInterval: '5000',
-        speed: '1000',
+        // speed: '500',
         pauseOnHover:false,
         defaultControlsConfig: {
             containerClassName : 'containerClassName',

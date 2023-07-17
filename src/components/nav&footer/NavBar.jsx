@@ -7,7 +7,8 @@ import {BsCart3} from "react-icons/Bs"
 export const NavBar = ({size}) => {
   const [click, setClick] = useState(false);
 
-  const handleClick = () => {setClick(!click);}
+  const handleClick = () => {setClick(!click);  }
+  
     return (
         <>
           <nav className="navbar">
@@ -18,6 +19,7 @@ export const NavBar = ({size}) => {
                 exact
                 to="/Cart"
                 className="nav-cart"
+                
               >
                 Cart
               </NavLink>
@@ -26,6 +28,9 @@ export const NavBar = ({size}) => {
                 exact
                 to="/"
                 className="nav-links"
+                onClick={() => {
+                  window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+                }}
               >
                 Home
               </NavLink>
@@ -35,24 +40,27 @@ export const NavBar = ({size}) => {
                 exact
                 to="/Products"
                 className="nav-links"
+                onClick={() => {
+                  window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+                }}
               >
                 Products
               </NavLink>
             </li>
       
             </ul>
-            <NavLink exact to="/" className="nav-logo">
+            <NavLink exact to="/" className="nav-logo" onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); }}>
                 Claue
             </NavLink>
             <NavLink 
             exact to ="/Cart"
             className="cart-icon">
           
-            <BsCart3/>
+            <BsCart3  onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); }}/>
             <span className="cart-no">{size}</span>
           
           </NavLink>
-          <div className="nav-icon" onClick={handleClick}>
+          <div className="nav-icon" onClick={handleClick } >
           <HiMenu />
           </div>
            </div>

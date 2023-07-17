@@ -6,6 +6,7 @@ import {NavBar} from './components/nav&footer/NavBar'
 import { Products } from './components/Products';
 import { Cart } from './components/Cart';
 import {Item} from '../src/components/Item'
+import { Footer } from "./components/nav&footer/footer";
 
 function App() {
   // const [show, setShow] = useState(true);
@@ -47,6 +48,7 @@ function App() {
     
       setCart(updatedCart);
     };
+    
 // console.log(items)
 
   return (
@@ -63,6 +65,7 @@ function App() {
         <Route exact path="/Item" element={<Item />} />
         </Routes>
         </div>
+        <Footer/>
     </Router>  
     </div>
   );
