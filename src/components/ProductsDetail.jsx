@@ -14,7 +14,9 @@ console.log({items})
   
  const moreitems=(items.filter((e)=>e.id!==item.id ))
 console.log({moreitems})
+
   return (
+    
     <div>
       <div className=" grid grid-cols-4 gap-4 justify-items-start bg-black mb-24 p-5 font-bold">
         <div onClick={() => {
