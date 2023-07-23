@@ -2,22 +2,25 @@ import { useParams, useNavigate } from "react-router-dom"
 import { categoriesList } from "./data.jsx" 
 import { useState } from "react"
 import { ProductItem } from "./ProductItem.jsx"
-
+import { useContext } from "react"
+import { ProductContext } from "./context/Productcontext.jsx"
 
 
 export const CategoriesDetail = () => {
   const { id } = useParams()
   const navigate = useNavigate()
+  const { setitems } = useContext(ProductContext)
+
 
   const category = categoriesList[id-1]
-  
+  // const routeToProductDetail = () => {
+    setitems(category.products)
+  //   navigate("/Productdetail/:id")
+  // }
   
 
   return (
     
-    // <button>
-      
-    // </button>
 
     <div >
       <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
@@ -35,7 +38,7 @@ export const CategoriesDetail = () => {
         ))}
 
       </div>
-      <p className="text-2xl text-blue-600 mt-8 mb-8  cursor-pointer hover:bg-sky-700 ">More</p>
+      <p className="text-2xl text-blue-600 mt-8 mb-8  cursor-pointer hover:bg-blue-700 ">More</p>
     </div>
     </div>
   )

@@ -8,6 +8,7 @@ import { Cart } from './components/Cart';
 import {Item} from '../src/components/Item'
 import { CategoriesDetail } from "./components/CategoriesDetail";
 import { ProductDetails } from "./components/ProductsDetail";
+import { ProductProvider } from "./components/context/Productcontext";
 
 function App() {
   // const [show, setShow] = useState(true);
@@ -52,7 +53,10 @@ function App() {
 // console.log(items)
 
   return (
+    
     <div>
+      <ProductProvider>
+      <div>
       <Router>
         <NavBar size={cart.length}/>
         {/* <Products  handleClick={handleClick}/> */}
@@ -68,6 +72,8 @@ function App() {
         </Routes>
         </div>
     </Router>  
+    </div>
+    </ProductProvider>
     </div>
   );
 };
