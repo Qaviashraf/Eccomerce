@@ -18,14 +18,18 @@ export const CategoriesDetail = () => {
   //   navigate("/Productdetail/:id")
   // }
   
+// const top =  () => {
+//   ( window.scrollTo({top: 0, left: 0, behavior: 'smooth'}));
+// }
+
 
   return (
     
 
     <div >
       <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-          onClick={() => {
-            navigate(-1)
+          onClick={ () => {
+            navigate(-1)  
           }}>
            Back
 

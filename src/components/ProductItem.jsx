@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 export const ProductItem = ({ product }) => {
   return (
     <Link to={`/Productdetail/${product.id}`}>
-      <div className=" shadow-lg rounded-2xl bg-white cursor-pointer hover:shadow-xl transition duration-200">
+      <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); }}
+      
+       className=" shadow-lg rounded-2xl bg-white cursor-pointer hover:shadow-xl transition duration-200">
         <img
           style={{
             width: "fit-contain",
