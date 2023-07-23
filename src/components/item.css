@@ -33,12 +33,13 @@ img.small {
     margin-top: 5px;
     margin-left: 20%;
     border: 1px black solid;
-    border-radius: 10px;
-    padding: 5px;
-    /* font-size: 20px; */
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
   }
   .cart-Btn:hover{
-    font-size: 20px;
+    background-color: rgb(26, 23, 23);
+    color: white;
   }
   /* .cartblock{
     display: none;
