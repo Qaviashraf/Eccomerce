@@ -92,6 +92,7 @@ border: 1px black solid;
 .Btn1 {
 /* max-width: fit-content; */
 /* max-height: 45px; */
+text-decoration: none;
 grid-column: 1;
 grid-row: 1;
 bottom: -128%;
@@ -100,6 +101,7 @@ right: -35%;
 .Btn2 {
     /* max-width: fit-content; */
     /* max-height: 45px; */
+    text-decoration: none;
     grid-column: 2;
     grid-row: 1;
     bottom: -73%;
@@ -108,6 +110,7 @@ right: -35%;
 .Btn3 {
     /* max-width: fit-content; */
     /* max-height: 45px; */
+    text-decoration: none;
     grid-column: 2;
     grid-row: 1;
     bottom: -73%;
@@ -116,6 +119,7 @@ right: -35%;
 .Btn4 {
     /* max-width: fit-content;  */
     /* max-height: 45px; */
+    text-decoration: none;
     grid-column: 2;
     grid-row: 2;
     /* top: -40%; */

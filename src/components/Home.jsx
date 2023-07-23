@@ -5,6 +5,7 @@ import "./categories.css"
 import { Products } from './Products'
 
 
+
 export const Home = ({ handleClick }) => {
     // const {product} = data ;
     
