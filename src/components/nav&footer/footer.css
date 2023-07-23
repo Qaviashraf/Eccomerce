@@ -16,11 +16,15 @@
     background-color:  rgb(26, 23, 23);
     color: white;
 }
+.footer h2{
+    font-size: 2rem;
+}
 p{ 
     padding: 10px;
    font-size: 18px;
   
 }
+
 .social-links{
     padding-top: 30px;
     display: flex;
@@ -90,9 +94,9 @@ p{
     }
     .sub{
         font-weight: bold;
-        border-radius: 100px;
+        border-radius: 20px;
         outline: none;
-        
+        padding: 1px;
         
         /* margin-right: 30%; */
     }

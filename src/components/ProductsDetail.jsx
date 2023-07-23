@@ -4,7 +4,7 @@ import { ProductItem } from "./ProductItem.jsx"
 import { useContext } from "react"
 import { ProductContext } from "./context/Productcontext.jsx"
 
-export const ProductDetails = () => {
+export const ProductDetails = ({handleClick}) => {
   const { id } = useParams()
   const navigate = useNavigate()
   const { items } = useContext(ProductContext)
@@ -48,7 +48,7 @@ console.log({moreitems})
           <h1 className="text-4xl mt-8 mb-8">{item.name}</h1>
           <p className="text-3xl my-8 mb-8 "> RS  <span className="text-cyan-500">{item.price}</span></p>
           <p className="mb-8">  {item.detail}</p>
-          <button className= "bg-blue-500 hover:bg-blue-700 text-white  py-2 px-4 rounded  ">
+          <button className= "bg-blue-500 hover:bg-blue-700 text-white  py-2 px-4 rounded  " onClick={() => handleClick(item)}>
             ADD TO CART
           </button>
         </div>
