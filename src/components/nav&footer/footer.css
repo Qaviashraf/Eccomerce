@@ -6,7 +6,7 @@
     color: white;
   } */
 
-.footer .row{
+  .footer .row{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -16,15 +16,11 @@
     background-color:  rgb(26, 23, 23);
     color: white;
 }
-.footer h2{
-    font-size: 2rem;
-}
 p{ 
     padding: 10px;
    font-size: 18px;
   
 }
-
 .social-links{
     padding-top: 30px;
     display: flex;
@@ -94,9 +90,11 @@ p{
     }
     .sub{
         font-weight: bold;
-        border-radius: 20px;
+        border-radius: 100px;
         outline: none;
-        padding: 1px;
+        padding: 2px;
+        border: none;
+        
         
         /* margin-right: 30%; */
     }
