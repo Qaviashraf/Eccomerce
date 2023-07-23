@@ -6,7 +6,13 @@ import {NavBar} from './components/nav&footer/NavBar'
 import { Products } from './components/Products';
 import { Cart } from './components/Cart';
 import {Item} from '../src/components/Item'
+// <<<<<<< main
+import { CategoriesDetail } from "./components/CategoriesDetail";
+import { ProductDetails } from "./components/ProductsDetail";
+import { ProductProvider } from "./components/context/Productcontext";
+// =======
 import { Footer } from "./components/nav&footer/footer";
+// >>>>>>> main
 
 function App() {
   // const [show, setShow] = useState(true);
@@ -52,7 +58,10 @@ function App() {
 // console.log(items)
 
   return (
+    
     <div>
+      <ProductProvider>
+      <div>
       <Router>
         <NavBar size={cart.length}/>
         {/* <Products  handleClick={handleClick}/> */}
@@ -63,10 +72,14 @@ function App() {
         <Route exact path="/Cart" element={<Cart  cart={cart} setCart={setCart} handleChange={handleChange}/>} />
         <Route exact path="/Products" element={<Products handleClick={handleClick} />} />
         <Route exact path="/Item" element={<Item />} />
+        <Route exact path="/Productdetail/:id" element={<ProductDetails/>} /> 
+        <Route exact path="/Categorydetail/:id" element={<CategoriesDetail/>} /> 
         </Routes>
         </div>
         <Footer/>
     </Router>  
+    </div>
+    </ProductProvider>
     </div>
   );
 };
