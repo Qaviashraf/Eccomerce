@@ -12,14 +12,14 @@ import {BsArrowUpSquareFill} from "react-icons/Bs"
 
 export const Footer = () => {
     return(
-        <footer class="footer">
-            <div class="row">        
+        <footer className="footer">
+            <div className="row">        
                     <div className="col-1" >
                         <NavLink exact to="/" className="company">
                         Claue
                         </NavLink>
                         <p >
-                        <TfiLocationPin /> 184 Main Rd E, St Albans VIC 3021, Australia  <br/><br/> <TfiEmail/> contact@company.com  <br/><br/> <BsTelephone/>  +001 2233 456
+                        <TfiLocationPin /> 184 Main Rd E, St Albans VIC 3021, Australia <br/><br/>  <TfiEmail/> contact@company.com  <br/><br/> <BsTelephone/>  +001 2233 456
                         </p>
                         <div className="social-links">
                         <LiaFacebookF className="social-link"/> <GrTwitter className="social-link"/> <LiaInstagram className="social-link"/>

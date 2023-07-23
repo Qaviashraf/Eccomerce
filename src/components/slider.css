@@ -15,10 +15,12 @@ img {
     height: 60%;
     top: 340px;
 }
-
+.dotButton{
+    
+}
 .containerClassName button {
-    /* width: 20px; */
-    /* height: 20px; */
+    width: 30px; 
+    height: 30px;
     border-radius: 50%;
     
 }
