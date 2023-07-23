@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const ProductItem = ({ product }) => {
   return (
-    <Link to={`/Productdetail/${product.id}`}>
+    <Link to={`/Productdetail/${product.id}`} onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}>
       <div className=" shadow-lg rounded-2xl bg-white cursor-pointer hover:shadow-xl transition duration-200">
         <img
           style={{

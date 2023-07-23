@@ -12,8 +12,8 @@ import {BsArrowUpSquareFill} from "react-icons/Bs"
 
 export const Footer = () => {
     return(
-        <footer class="footer">
-            <div class="row">        
+        <footer className="footer">
+            <div className="row">        
                     <div className="col-1" >
                         <NavLink exact to="/" className="company">
                         Claue

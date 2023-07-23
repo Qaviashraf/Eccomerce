@@ -17,7 +17,9 @@ console.log({moreitems})
   return (
     <div>
       <div className=" grid grid-cols-4 gap-4 justify-items-start bg-black mb-24 p-5 font-bold">
-        
+        <div onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }}>
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white  py-2 px-4 rounded  "
           onClick={() => {
@@ -26,7 +28,7 @@ console.log({moreitems})
         >
           Back
         </button>
-      
+        </div>
         
         <h2 className="text-4xl  text-white col-span-3  "  >{item.name}</h2>
       

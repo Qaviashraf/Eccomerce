@@ -22,14 +22,18 @@ export const CategoriesDetail = () => {
   return (
     
 
-    <div >
+    <div  >
+      
       <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      
           onClick={() => {
-            navigate(-1)
-          }}>
+            navigate(-1);
+          }
+          }>
            Back
 
       </button>
+      
       <div className="flex flex-col judtify-center items-center">
       <h1 className="text-4xl mt-8 mb-8">Products</h1>
       <div className="grid grid-rows-2 grid-cols-2 gap-12 ">

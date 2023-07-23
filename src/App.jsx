@@ -13,9 +13,13 @@ import { ProductProvider } from "./components/context/Productcontext";
 // =======
 import { Footer } from "./components/nav&footer/footer";
 // >>>>>>> main
+// import {useEffect} from 'react';
 
 function App() {
-
+  useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }, []);
   // const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
 
