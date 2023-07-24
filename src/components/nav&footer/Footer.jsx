@@ -19,7 +19,7 @@ export const Footer = () => {
                         Claue
                         </NavLink>
                         <p >
-                        <TfiLocationPin /> 184 Main Rd E, St Albans VIC 3021, Australia <br/><br/>  <TfiEmail/> contact@company.com  <br/><br/> <BsTelephone/>  +001 2233 456
+                        <TfiLocationPin className="inline" /> 184 Main Rd E, St Albans VIC 3021, Australia <br/><br/>  <TfiEmail className="inline"/> contact@company.com  <br/><br/> <BsTelephone className="inline"/>  +001 2233 456
                         </p>
                         <div className="social-links">
                         <LiaFacebookF className="social-link"/> <GrTwitter className="social-link"/> <LiaInstagram className="social-link"/>
@@ -47,8 +47,8 @@ export const Footer = () => {
                     <div className="col">
                     <h3>Subscribe to our newsletter and get <br/>10% off your first purchase</h3>
                     <div className="col-input">
-                    <input type="text" placeholder="  Enter your email address"  />
-                    <button className="sub">Subscribe</button>
+                    <input type="text" placeholder="  Enter your email address"  className=" text-black"/>
+                    <button className="sub bg-black">Subscribe</button>
                     </div>
                     <BsArrowUpSquareFill className="scroll" onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); }}/>
                     </div>

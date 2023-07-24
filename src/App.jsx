@@ -11,7 +11,7 @@ import { CategoriesDetail } from "./components/CategoriesDetail";
 import { ProductDetails } from "./components/ProductsDetail";
 import { ProductProvider } from "./components/context/Productcontext";
 // =======
-import { Footer } from "./components/nav&footer/footer";
+import { Footer } from "./components/nav&footer/Footer";
 
 // >>>>>>> main
 // import {useEffect} from 'react';
