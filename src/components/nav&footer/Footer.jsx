@@ -27,6 +27,9 @@ export const Footer = () => {
                         <p>contact@company.com</p></div>
                         <div className="num">
                         <BsTelephone className="abouticons"/> <p> +001 2233 456</p></div>
+                        <p >
+                        <TfiLocationPin className="inline" /> 184 Main Rd E, St Albans VIC 3021, Australia <br/><br/>  <TfiEmail className="inline"/> contact@company.com  <br/><br/> <BsTelephone className="inline"/>  +001 2233 456
+                        </p>
                         <div className="social-links">
                         <LiaFacebookF className="social-link"/> <GrTwitter className="social-link"/> <LiaInstagram className="social-link"/>
                         </div>

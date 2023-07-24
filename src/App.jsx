@@ -11,7 +11,8 @@ import { CategoriesDetail } from "./components/CategoriesDetail";
 import { ProductDetails } from "./components/ProductsDetail";
 import { ProductProvider } from "./components/context/Productcontext";
 // =======
-import { Footer } from "./components/nav&footer/footer";
+import { Footer } from "./components/nav&footer/Footer";
+
 // >>>>>>> main
 // import {useEffect} from 'react';
 
@@ -68,20 +69,24 @@ function App() {
       <ProductProvider>
       <div>
       <Router>
+      
         <NavBar size={cart.length}/>
         {/* <Products  handleClick={handleClick}/> */}
         {/* <Cart cart={cart} setCart={setCart} handleChange={handleChange}/> */}
       <div>
       <Routes>
-        <Route exact path="/" element={<Home handleClick={handleClick}/>} />
+      
+        <Route exact path="/"  element={<Home handleClick={handleClick}/>} />
         <Route exact path="/Cart" element={<Cart  cart={cart} setCart={setCart} handleChange={handleChange}/>} />
         <Route exact path="/Products" element={<Products handleClick={handleClick} />} />
         <Route exact path="/Item" element={<Item />} />
         <Route exact path="/Productdetail/:id" element={<ProductDetails handleClick={handleClick} />} /> 
         <Route exact path="/Categorydetail/:id" element={<CategoriesDetail/>} /> 
+        
         </Routes>
         </div>
         <Footer/>
+        
     </Router>  
     </div>
     </ProductProvider>

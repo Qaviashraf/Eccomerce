@@ -13,30 +13,30 @@ export const Categories = () => {
         <h2 className='heading-1'>Categories</h2>
         <div className="categories">
         
-        {/* <Link className="item-1" to={`/Categorydetail/${1}`}> */}
+        <Link to={`/Categorydetail/${1}`}>
+            <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); }}>
             <img  className="item-1" src={Clothes} alt="" />
-            <Link className="link Btn1"  to={`/Categorydetail/${1}`}>
-            <button className="Btn Btn1" onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}>
-                Clothing</button>
+            <button className="Btn Btn1">Clothing</button>
+            </div>
             </Link>  
 
-            {/* <Link className="item-2" to={`/Categorydetail/${2}`}> */}
+            <Link to={`/Categorydetail/${2}`}>
+            <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); }}>
             <img className="item-2" src={Shoes} alt="" />
-            <Link className="link Btn2" to={`/Categorydetail/${2}`}>
-            <button className="Btn Btn2" onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}>
-                Shoes</button>
+            <button className="Btn Btn2">Shoes</button>
+            </div>
             </Link> 
-            {/* <Link className="item-3" to={`/Categorydetail/${4}`}> */}
+            <Link to={`/Categorydetail/${4}`}>
+            <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); }}>
             <img className="item-3" src={Watches} alt="" />
-            <Link className="link Btn3" to={`/Categorydetail/${4}`}>
-            <button  className="Btn Btn3" onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}>
-                Watches</button>
+            <button  className="Btn Btn3">Watches</button>
+            </div>
             </Link> 
-            {/* <Link className="item-4" to={`/Categorydetail/${3}`}> */}
-            <img  className="item-4" src={Accessories} alt="" />
-            <Link className="link Btn4" to={`/Categorydetail/${3}`}>
-            <button className="Btn Btn4" onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}>
-                Accessories</button>
+            <Link to={`/Categorydetail/${3}`}>
+            <div onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); }}>
+            <img className="item-4" src={Accessories} alt="" />
+            <button className="Btn Btn4">Accessories</button>
+            </div>
             </Link> 
 
     </div>
