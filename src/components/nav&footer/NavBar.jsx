@@ -19,7 +19,7 @@ export const NavBar = ({size}) => {
                 exact
                 to="/Cart"
                 className="nav-cart"
-                
+                onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}}
               >
                 Cart
               </NavLink>
