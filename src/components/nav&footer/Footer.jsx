@@ -18,9 +18,15 @@ export const Footer = () => {
                         <NavLink exact to="/" className="company">
                         Claue
                         </NavLink>
-                        <p >
-                        <TfiLocationPin /> 184 Main Rd E, St Albans VIC 3021, Australia <br/><br/>  <TfiEmail/> contact@company.com  <br/><br/> <BsTelephone/>  +001 2233 456
-                        </p>
+                        <div className="address">
+                        <TfiLocationPin className="abouticons"/>
+                        <p >184 Main Rd E, St Albans VIC 3021, Australia </p>
+                        </div>
+                        <div className="email">
+                        <TfiEmail className="abouticons"/>
+                        <p>contact@company.com</p></div>
+                        <div className="num">
+                        <BsTelephone className="abouticons"/> <p> +001 2233 456</p></div>
                         <div className="social-links">
                         <LiaFacebookF className="social-link"/> <GrTwitter className="social-link"/> <LiaInstagram className="social-link"/>
                         </div>
@@ -47,14 +53,17 @@ export const Footer = () => {
                     <div className="col">
                     <h3>Subscribe to our newsletter and get <br/>10% off your first purchase</h3>
                     <div className="col-input">
-                    <input type="text" placeholder="  Enter your email address"  />
-                    <button className="sub">Subscribe</button>
+                    <input type="text" placeholder="  Enter your email address"  className="text-black"/>
+                    <button className="sub text-black">Subscribe</button>
                     </div>
                     <BsArrowUpSquareFill className="scroll" onClick={() => { window.scrollTo({top: 0, left: 0, behavior: 'smooth'}); }}/>
                     </div>
             </div>
             <div className="copyrights">
-                <h3> <AiOutlineCopyrightCircle/> 2023 Copyright By Mern Genius</h3>
+                <div className="copyrights-1">
+                <AiOutlineCopyrightCircle className="copy-icon"/>
+                <h3>2023 Copyright By Mern Genius</h3>
+                </div>
                 <div className="copyrights-2">
                     <h3>Blogs</h3>
                     <h3>Shop</h3>

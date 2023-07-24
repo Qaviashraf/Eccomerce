@@ -11,9 +11,30 @@
     color: white;
 }
 p{ 
-    padding: 10px;
-   font-size: 18px;
+    padding: 8px;
+    font-weight: 400;
+   font-size: 15px;
   
+}
+
+.footer h2{
+    font-size: 25px;
+    margin-top: 20px;
+}
+.col-1 .abouticons{
+    font-size: 25px;
+}
+.col-1 .address{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1 .email{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1 .num{
+    display: flex;
+    flex-wrap: wrap;
 }
 .social-links{
     padding-top: 30px;
@@ -74,7 +95,7 @@ p{
         border: none;
         outline: none;
         width: 100%;
-        padding-left: 10px;
+        padding-left: 20px;
     }
     .sub{
         font-weight: bold;
@@ -102,6 +123,13 @@ p{
     display: flex;
     justify-content: space-between;
     padding: 10px;
+   }
+   .copy-icon{
+    margin-top: 20px;
+   }
+   .copyrights-1{
+    display: flex;
+    flex-wrap: wrap;
    }
    .copyrights-2{
     display: flex;
